@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      /* *{
+        box-sizing: border-box;
+        overflow-x: hidden;
+      } */
+    .carousel-inner > .carousel-item > img {
+  width:640px;
+  height:670px;
+} 
+.welcome{
+    padding-top: 3%;
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: rgb(231, 237, 240);
+}
+#name{
+    color: rgb(10, 10, 241);
+}
+#boxes{
+    
+    position: relative;
+    display:flex;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 4%;
+    
+}
+
+
+
+#boxes>.card>.card-body{
+    align-content: center;
+    margin-top: 3%;
+}
+#boxes>.card>.card-body>.card-text{
+    font-size: 30px;
+    color: white;
+   
+}
+#boxes>.card>.card-body>.card-text:hover{
+    color: rgb(55, 55, 241);
+}
+.welcome>.container>.card{
+    width: 15rem;height: 13rem;
+    background-color: rgb(55, 55, 241);
+    margin-right: 2%
+}
+.welcome>.container>.card:hover{
+    background-color: rgb(105, 131, 248);
+}
+.row {
+  display: flex;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding-left: 3%;
+
+   
+ 
+}
+
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 10px;
+  opacity: 1;
+  
+
+}
+.column:hover{
+  opacity: 0.5;
+}
+.upcoming{
+  padding-top: 3%;
+    align-content: center;
+    /* padding-right: 10%; */
+    font-family: 'Barlow Condensed', sans-serif;
+    text-align: center;
+    background-color: rgb(231, 237, 240);
+}
+#upcome{
+  position: relative;
+    display:flex;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 7%;
+}
+
+.upcoming>#upcome>.card{
+  margin-right: 5%;
+  
+}
+.upcoming > #upcome > .card > img{
+  height: 200px;
+}
+.upcoming>button{
+  font-size: 20px;
+  margin-bottom: 5%;
+  background-color: rgb(48, 48, 105);
+  color: white;
+  border: transparent;
+  padding: 10px;
+}
+.upcoming>button:hover{
+  opacity: 0.9;
+}
+.skool >img{
+  height: 500px;
+  width: 100%;
+  filter: blur(1.5px) grayscale(100%);
+}
+.skool{
+  text-align: center;
+  height: 500px;
+}
+.skool>.skooltext{
+  position: relative;
+  left: 50%;
+  bottom: 250px;
+  transform: translate(-50%, -50%);
+  /* font-size: 20px; */
+  font-weight: 700;
+  color: red;
+}
+.skool>.skooltext>button{
+  font-size: 25px;
+  margin-top: 5%;
+  background-color: rgb(48, 48, 105);
+  color: white;
+  border: transparent;
+  padding: 15px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.skool>.skooltext>button:hover{
+  opacity: 0.9;
+}
+.connect{
+  padding-top: 3%;
+ background-image: url(https://images.pexels.com/photos/1323712/pexels-photo-1323712.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    
+    /* padding-right: 10%; */
+    font-family: 'Barlow Condensed', sans-serif;
+    text-align: center;
+}
+
+.connect>form>.container {
+  margin-top: 2%;
+  padding: 20px;
+  background-color: #f1f1f1;
+  width: 50%;
+}
+input[type=text], input[type=submit] {
+  width: 50%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+ 
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: rgb(48, 48, 105);
+  color: white;
+  width: 20%;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+.footer{
+  padding-top: 3%;
+background-color: #ccc;  
+padding-bottom: 3%;  
+    /* padding-right: 10%; */
+    font-family: 'Barlow Condensed', sans-serif;
+    text-align: center;
+}
+
+
+</style>
+    <meta charset="UTF-8">
+    <meta property="og:description" content="Đây là trang web chính thức của lớp 12TN1 - THPT LƯƠNG TÂM">
+    <meta name="twitter:title" content="12TN1 - THPT LƯƠNG TÂM">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;1,600&display=swap" rel="stylesheet">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>12TN1</title>
+    
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg   navbar-light " style="background-color: #c9dcf5;">
+        <a class="navbar-brand" href="#">12TN1 - THPT LƯƠNG TÂM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link" href="#">SỰ KIỆN <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">THÔNG TIN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">LIÊN HỆ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                TÀI NGUYÊN
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">THƯ VIỆN ẢNH</a>
+                <a class="dropdown-item" href="#">MEME</a>
+                <a class="dropdown-item" href="#">KỈ NIỆM</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+          </form>
+      </nav>
+
+
+
+      <!-- corousel -->
+      
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://scontent.fvca3-1.fna.fbcdn.net/v/t39.30808-6/472156948_1771871190333790_7245119302422222075_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=IPJzm6EfJ7sQ7kNvgHU4N0D&_nc_oc=AdiAq5xdklWO51fGLaaf6TorlDcXCDrIBbNTMh8FHTtEF8qUPsTA1p95mKUdczbBkWUaqXsBwavaEm0nh1bnBeGD&_nc_zt=23&_nc_ht=scontent.fvca3-1.fna&_nc_gid=AUHiyifyoZ6_Onhax1bzEyM&oh=00_AYFhLwtadozz8aImiCrqvcVTNuF8Vixse4vKZig2eRFaiw&oe=67D4D897" class="d-block w-100 img-fluid" alt="..." >
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Trang web chính thức của 12TN1</h5>
+              <p>Code by Nguyện 12TN1</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img   src="https://scontent.fvca3-1.fna.fbcdn.net/v/t39.30808-6/471915379_1771871223667120_3586993792469880524_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=OfL3oshykl8Q7kNvgGlZesV&_nc_oc=Adiwm4wShQoVHj0XM4FonDREg9VDk8P0BoT1cb16k4aQZ7qkcmMKaszcElBdeLMQrWrFyqHBPtA3ZHCnL9eRK0sY&_nc_zt=23&_nc_ht=scontent.fvca3-1.fna&_nc_gid=AK9m-U4joUQf_hZEJ1mmoNj&oh=00_AYEMcs6uS5oBGvhmWARHIPuRc8YRvGbkI4HojNmwv3Re4Q&oe=67D4C1A8" class="d-block w-100 img-fluid" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Trang web chính thức của 12TN1</h5>
+              <p>Tự code - Tự làm - Tự nhớ</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://scontent.fvca3-1.fna.fbcdn.net/v/t39.30808-6/465929109_878828934232137_849501892149364910_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=2285d6&_nc_ohc=R0oDUdmbgt8Q7kNvgF9vBom&_nc_oc=AdjMbyUhgPCaV5GzYENq4kK3udKNbdY5rsrYb3qLgcpuEsmxpVbdhgK4lNikR_T3SctYRHzUWegQNa-ZlbNTiUNe&_nc_zt=23&_nc_ht=scontent.fvca3-1.fna&_nc_gid=AJ8uJdkgeol1bkfFnpY-QYT&oh=00_AYEklWIykdmkbg8X8YvqodBOw5AiKX1ffVvaLrPABCUtmw&oe=67D4BC37" class="d-block w-100 img-fluid  " alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Trang web chính thức của 12TN1</h5>
+              <p>Mãi yêu 12TN1</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Trước</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Sau</span>
+        </a>
+      </div>
+
+     <!-- welcome div -->
+
+
+     <div class="welcome">
+         <h1>Welcome To</h1>
+         <h1 id="name">12TN1 - THPT LƯƠNG TÂM</h1>
+         <hr style="height:2px;width:50%;border-width:0;color:gray;background-color:gray">
+         <blockquote class="blockquote text-center">
+            <p class="mb-0">Một trang web được xây dựng để giữ lại kỉ niệm với lớp 12TN1</p>
+            <footer class="blockquote-footer">Code by &nbsp;<cite title="Source Title">Nguyện</cite></footer>
+          </blockquote>
+          <h1 >SỬ DỤNG BỞI 2 NGÔN NGỮ CHÍNH (<a href="#">HTML </a>/<a href="#">CSS</a>)</h1>
+         <!-- boxesssss -->
+         
+          <div class="container" id="boxes" >
+           
+            <div class="card" >
+                
+                <div class="card-body">
+                  <a href="#" class="card-text"><svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-person-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M11 14s1 0 1-1-1-4-6-4-6 3-6 4 1 1 1 1h10zm-9.995-.944v-.002.002zM1.022 13h9.956a.274.274 0 0 0 .014-.002l.008-.002c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664a1.05 1.05 0 0 0 .022.004zm9.974.056v-.002.002zM6 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm4.5 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                    <path fill-rule="evenodd" d="M13 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0v-2z"/>
+                  </svg><br>LIÊN HỆ</a>
+
+                </div>
+              </div>
+              <div class="card" >
+                
+                <div class="card-body">
+                  <a href="#" class="card-text"><svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-book-half" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M12.786 1.072C11.188.752 9.084.71 7.646 2.146A.5.5 0 0 0 7.5 2.5v11a.5.5 0 0 0 .854.354c.843-.844 2.115-1.059 3.47-.92 1.344.14 2.66.617 3.452 1.013A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.276-.447L15.5 2.5l.224-.447-.002-.001-.004-.002-.013-.006-.047-.023a12.582 12.582 0 0 0-.799-.34 12.96 12.96 0 0 0-2.073-.609zM15 2.82v9.908c-.846-.343-1.944-.672-3.074-.788-1.143-.118-2.387-.023-3.426.56V2.718c1.063-.929 2.631-.956 4.09-.664A11.956 11.956 0 0 1 15 2.82z"/>
+                    <path fill-rule="evenodd" d="M3.214 1.072C4.813.752 6.916.71 8.354 2.146A.5.5 0 0 1 8.5 2.5v11a.5.5 0 0 1-.854.354c-.843-.844-2.115-1.059-3.47-.92-1.344.14-2.66.617-3.452 1.013A.5.5 0 0 1 0 13.5v-11a.5.5 0 0 1 .276-.447L.5 2.5l-.224-.447.002-.001.004-.002.013-.006a5.017 5.017 0 0 1 .22-.103 12.958 12.958 0 0 1 2.7-.869z"/>
+                  </svg><br>DẠY HỌC</a>
+                </div>
+              </div>
+              <div class="card" >
+                
+                <div class="card-body">
+                  <a href="#" class="card-text"><svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-people" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.995-.944v-.002.002zM7.022 13h7.956a.274.274 0 0 0 .014-.002l.008-.002c-.002-.264-.167-1.03-.76-1.72C13.688 10.629 12.718 10 11 10c-1.717 0-2.687.63-3.24 1.276-.593.69-.759 1.457-.76 1.72a1.05 1.05 0 0 0 .022.004zm7.973.056v-.002.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10c-1.668.02-2.615.64-3.16 1.276C1.163 11.97 1 12.739 1 13h3c0-1.045.323-2.086.92-3zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+                  </svg><br>TRỢ GIÚP</a>
+                </div>
+              </div>
+              <div class="card">
+                
+                <div class="card-body">
+                  <a href="#" class="card-text"><svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-graph-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h1v16H0V0zm1 15h15v1H1v-1z"/>
+                    <path fill-rule="evenodd" d="M14.39 4.312L10.041 9.75 7 6.707l-3.646 3.647-.708-.708L7 5.293 9.959 8.25l3.65-4.563.781.624z"/>
+                    <path fill-rule="evenodd" d="M10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4h-3.5a.5.5 0 0 1-.5-.5z"/>
+                  </svg><br>KỈ NIỆM</a>
+                </div>
+              </div>
+
+
+          </div>
+     </div>
+
+     <!-- extras -->
+
+     <div class="row">
+      <div class="column">
+        <img src="https://scontent.fvca3-1.fna.fbcdn.net/v/t39.30808-6/472310468_1771869847000591_928333224366089503_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=aa7b47&_nc_aid=0&_nc_ohc=Mmt2rTormFcQ7kNvgF7TDXs&_nc_oc=AdgYQoMvHrhKoPpdyk3j0o_Et7V8lU2vUALL1oppWRpbXIlnrpW1bgB3D4uODXcsae5DWYEJYsWeGTCYjp_OYc4z&_nc_zt=23&_nc_ht=scontent.fvca3-1.fna&_nc_gid=AAVKWieXmVa-JybDyN3QjC4&oh=00_AYH9h1YqfjIMp_UcFJbnETWmwYSKnBFF-gKn7xJK9wNs7g&oe=67D4E248" alt="Snow" style="width:90%; height: 100%;">
+       
+      </div>
+      <div class="column">
+        <img src="https://scontent.fvca3-1.fna.fbcdn.net/v/t39.30808-6/471919623_1771871350333774_2336560800039235195_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=86RMP5vIuwgQ7kNvgEGzF27&_nc_oc=AdgWle4WkMgxps1fK-_YLqP0IsBdyHeZfM9B2xSJKY500qft1t-1u-D2UcQm5mXD6CUzN0jTZbW96RiH2y0oq27A&_nc_zt=23&_nc_ht=scontent.fvca3-1.fna&_nc_gid=ArZ9Mzq0BD7mL4pJUQMdGND&oh=00_AYGrHOr-qINErnyCI13JGebydsdqzQX53QycAJvWJPEajQ&oe=67D4DEE5" alt="Forest" style="width:90%;height: 100%;">
+      </div>
+      <div class="column">
+        <img src="https://scontent.fvca3-1.fna.fbcdn.net/v/t39.30808-6/472132231_1771869800333929_1053050081319434052_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=jn_10SO2VpcQ7kNvgG4sVnQ&_nc_oc=AdhFhtVdd_DgyjiJ6rPhWKjdtPZ1r_a6Ts7fr79Yu4HHvxrUNcL9xtnlIrPCliBItxTqyJpSBJCvS0v34CN_Dmwl&_nc_zt=23&_nc_ht=scontent.fvca3-1.fna&_nc_gid=AaQ6dg7FeATjU1Y3AuyXesU&oh=00_AYEBqqfGnhH7FsOLzN15RKyR88bUPzxfteJc7gTDp6Bx2Q&oe=67D4E0AB" alt="Mountains" style="width:90%;height: 100%;">
+      </div>
+    </div>
+
+
+<!-- cards -->
+
+
+    <div class="upcoming">
+      <h1>SỰ KIỆN CHÍNH</h1>
+      <div class="container" id="upcome">
+      <div class="card" style="width: 18rem;">
+        <img src="https://scontent.fvca3-1.fna.fbcdn.net/v/t39.30808-6/468948044_1094167992413247_3099177926483026_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=102&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=wHc5LSUj5l4Q7kNvgETSH7Q&_nc_oc=AdglWTCUl50mCXrsq9WfPgge6rke0qx2UOidpfBGCucsDjFK-CV6cbrmbbX9c7x-QdSPJQ2NaaEFM-jSn2KV5ij8&_nc_zt=23&_nc_ht=scontent.fvca3-1.fna&_nc_gid=AF4hvUofNU1PLRmsgTzWzRg&oh=00_AYEfv6j2sL36rJdCFYAyYho7TV6Q0DX3OMw91QTkj7_79g&oe=67D4BAA6" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Đi Vĩnh Long</h5>
+          <p class="card-text">Cosplay cái gì tôi cũng không biết</p>
+          <footer>Nguồn :  &nbsp;<cite title="Source Title">12TN1</cite></footer><br>
+          <a href="#" class="btn btn-primary">KỈ NIỆM</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="https://scontent.fvca3-1.fna.fbcdn.net/v/t39.30808-6/476163646_1632837007325199_7837324315995908386_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=gcID9DEDHLUQ7kNvgHLnxaf&_nc_oc=Adg07dmevWSG2wUo-b7COiENe_JUcJw92p7-uqzpz9ZTR8j_1BCJFQN4nxFX-Bmv7NTjoPpiMo4CRAis0JJItMO9&_nc_zt=23&_nc_ht=scontent.fvca3-1.fna&_nc_gid=AOymxhUgU7drc0P12GBOmxp&oh=00_AYF6-ob4cqAqlxTY5lEDUAEFzl3RmjLsS9XjdMW3lhjNbA&oe=67D4DC34" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hộp quà vui vẻ</h5>
+          <p class="card-text">Hội anh em đẹp trai nhất lớp</p>
+          <footer>Nguồn :  &nbsp;<cite title="Source Title">12TN1</cite></footer><br>
+          <a href="#" class="btn btn-primary">KỈ NIỆM</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="https://scontent.fvca3-1.fna.fbcdn.net/v/t39.30808-6/471746872_1771871320333777_7763419296870456718_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=110&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=V-KLQCEffQYQ7kNvgH9P1h3&_nc_oc=Adg2ruXp7udV5xBnwB98qGfnttFJFOD1XhjLBibW0eCSZLttpFw9352uWdB4Mle3RYVFpGi9f6uF_UYr1YiML2UD&_nc_zt=23&_nc_ht=scontent.fvca3-1.fna&_nc_gid=AI5N2OGITEzWd739JJ-ouCR&oh=00_AYG7TF1LjFmmWLY2Uwf_0nhkD2x0k40onRLCwRRmC6ukHg&oe=67D4C224" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">20/11 vui vẻ</h5>
+          <p class="card-text">Dàn 12TN1 trai xinh gái đẹp</p>
+          <footer>Nguồn :  &nbsp;<cite title="Source Title">12TN1</cite></footer><br>
+          <a href="#" class="btn btn-primary">KỈ NIỆM</a>
+        </div>
+      </div>
+      
+      
+
+    
+    </div>
+
+    <button >12TN1 - THPT LƯƠNG TÂM</button>
+    </div>
+
+
+<!-- skool image -->
+    
+
+
+    <!-- connect -->
+
+    <div class="connect">
+      <h1>Liên hệ với chúng tôi</h1>
+      <form action="/action_page.php">
+        <div class="container">
+          <h2>Nếu cần trợ giúp, xin đăng ký:</h2>
+        </div>
+      
+        <div class="container" style="background-color:rgb(120, 207, 247)">
+          <input type="text" placeholder="TÊN ĐĂNG KÝ" name="name" required>
+          <input type="text" placeholder="ĐỊA CHỈ EMAIL" name="mail" required>
+          
+        </div>
+      
+        <div class="container">
+          <input type="submit" value="Đăng ký">
+        </div>
+      </form>
+    </div>
+    
+<!-- footer -->
+<div class="footer">
+  <h4>Liên hệ</h4>
+  <a class="ft" href="#!">Facebook: </a>
+  <a class="ft" href="#!">Nguyễn Võ Chí Nguyện</a>
+  <div class="footer-copyright #424242 grey darken-3">
+    <div id="foot">
+
+    Trang web được code bởi Nguyễn Võ Chí Nguyện 12TN1 - Vui lòng không sử dụng hoặc rao bán bản quyền dưới mọi hình thức, nếu có thắc mắc vui lòng liên hệ: <a href="#">nguyenchie60@gmail.com</a>
+    </div>
+    <a class="in" href="#"><img height="15px" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_North_Vietnam_%281955%E2%80%931976%29.svg/640px-Flag_of_North_Vietnam_%281955%E2%80%931976%29.svg.png">  NGUYỆN/12TN1</a><br>
+    </div>
+</div>
+
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
